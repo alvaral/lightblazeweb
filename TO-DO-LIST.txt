@@ -1,0 +1,6 @@
+TAREAS QUE HACER:
+
+- Añadir letras del menu a gris para que se note la diferencia cuando se selecciona (blanco predeterminado, negro pulsado)
+- Añadir funcionalidad reproducir música en item de single
+- Añadir funcionalidad repdroducir album/EP en item de album/EP
+- Quitar comentarios del blog
