@@ -259,4 +259,32 @@
     }
   });
 
+  
+  
+
 })()
+
+/**
+   * Play pause function
+   */
+ var audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+
+ $('#play-pause-button').on("click",function(){
+   if($(this).hasClass('bx-play'))
+    {
+      $(this).removeClass('bx-play');
+      $(this).addClass('bx-pause');
+      audio.play();
+    }
+   else
+    {
+      $(this).removeClass('bx-pause');
+      $(this).addClass('bx-play');
+      audio.pause();
+    }
+ });
+ 
+ audio.onended = function() {
+      $("#play-pause-button").removeClass('bx-pause');
+      $("#play-pause-button").addClass('bx-play');
+ };
