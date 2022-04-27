@@ -740,7 +740,6 @@ p {
     padding: 0;
 }
 
-
 #portfolio .portfolio-item .portfolio-info .preview-link {
     position: absolute;
     right: 40px;
@@ -760,7 +759,7 @@ p {
 }
 
 #portfolio .portfolio-item .portfolio-info .play-pause-button:hover,
-#portfolio .portfolio-item .portfolio-info .preview-link:hover{
+#portfolio .portfolio-item .portfolio-info .preview-link:hover {
     /*color: #cab89f;*/
     color: #000000;
 }
@@ -849,7 +848,7 @@ p {
 # Journal
 --------------------------------------------------------------*/
 
-#journal,
+#blog,
 #journal-blog {
     height: auto;
     width: 100%;
@@ -863,13 +862,13 @@ p {
     padding-bottom: 30px;
 }
 
-#journal .journal-block {
+#blog .journal-block {
     display: inline-block;
     height: auto;
     width: 100%;
 }
 
-#journal .journal-block .journal-info {
+#blog .journal-block .journal-info {
     position: relative;
 }
 
@@ -1270,7 +1269,7 @@ blockquote {
         display: inline-block;
     }
     /* journal */
-    #journal .journal-block .journal-info {
+    #blog .journal-block .journal-info {
         margin-bottom: 30px;
     }
     /* Contact */
@@ -1342,7 +1341,7 @@ blockquote {
         display: inline-block;
     }
     /* journal */
-    #journal .journal-block .journal-info {
+    #blog .journal-block .journal-info {
         margin-bottom: 30px;
     }
     /* Contact */
@@ -1414,7 +1413,7 @@ blockquote {
         display: inline-block;
     }
     /* journal */
-    #journal .journal-block .journal-info {
+    #blog .journal-block .journal-info {
         margin-bottom: 30px;
     }
     /* Contact */
@@ -1485,7 +1484,7 @@ blockquote {
         margin: 20px;
     }
     /* journal */
-    #journal .journal-block .journal-info {
+    #blog .journal-block .journal-info {
         margin-bottom: 30px;
     }
     /* Contact */
@@ -1556,7 +1555,7 @@ blockquote {
         margin: 20px;
     }
     /* journal */
-    #journal .journal-block .journal-info {
+    #blog .journal-block .journal-info {
         margin-bottom: 30px;
     }
     /* Contact */
@@ -1577,6 +1576,7 @@ blockquote {
     }
 }
 
+
 /*--------------------------------------------------------------
 # Audio
 --------------------------------------------------------------
@@ -1595,11 +1595,12 @@ blockquote {
 label {
     cursor: pointer;
 }
+
 .play-pause-checkbox {
     display: none;
 }
 
-.play-pause-label{
+.play-pause-label {
     font-size: 30px;
     position: absolute;
     right: 40px;
