@@ -260,31 +260,72 @@
   });
 
   
+/**
+   * Play pause function
+  
+  
+var globalPlay = false;
+
+on('click', '#play-pause', function(e) {
+  var audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+  console.log('playMusic() ejecutado');
+  if(globalPlay==true){
+    console.log('pausar audio');
+    audio.pause;
+    globalPlay=false;
+  } else{
+    console.log('reproducir audio');
+    audio.play;
+    globalPlay=true;
+  }
+
+}, true)
+ */
+
   
 
 })()
 
-/**
-   * Play pause function
-   */
- var audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+//var audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+var audio = new Audio();
+let audios = new Array(
+    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', 
+    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+);
+var lastCheckBox=null;
 
- $('#play-pause-button').on("click",function(){
-   if($(this).hasClass('bx-play'))
-    {
-      $(this).removeClass('bx-play');
-      $(this).addClass('bx-pause');
-      audio.play();
-    }
-   else
-    {
-      $(this).removeClass('bx-pause');
-      $(this).addClass('bx-play');
-      audio.pause();
-    }
- });
+
+function myfunction(mycheckboxid, audiopath) {  
+
+  var mycheckbox = document.getElementById(mycheckboxid);
+  var mycheckboxlabel = document.getElementById(mycheckboxid+'-label');
+  audio.src = audios[Number.parseInt(audiopath)];
+
+  if(lastCheckBox!=null){
+    audio.pause();
+    lastCheckBox.checked = false;
+    lastcheckboxlabel = document.getElementById(lastCheckBox.id+'-label');
+   
+    
+    lastcheckboxlabel.innerHTML = '►';
+    lastCheckBox=null;
+   
+  }
+  
+  if (mycheckbox.checked) {
+    audio.play();
+    mycheckboxlabel.innerHTML = '❙❙';
+    lastCheckBox = mycheckbox;
+
+  } else{
+    audio.pause();
+    mycheckboxlabel.innerHTML = '►';
+   
+  }
+}
+
+
+
+
  
- audio.onended = function() {
-      $("#play-pause-button").removeClass('bx-pause');
-      $("#play-pause-button").addClass('bx-play');
- };
+ 

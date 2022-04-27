@@ -225,6 +225,7 @@
 
             <div class="container">
 
+            <!-- FILTER
                 <div class="row">
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
@@ -235,44 +236,59 @@
                         </ul>
                     </div>
                 </div>
+            -->
 
                 <div class="row portfolio-container">
 
                     <!-- ======= Single Card ======= -->
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/song-pictures/ALongStart-image.jpeg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Song 1</h4>
+                            <h4>A Long Start</h4>
                             <p>Single</p>
-
+                    
+                            <input type="checkbox" id="play-pause1" onchange="myfunction(this.id, '0')" class="play-pause-checkbox"/>
+                            <label for="play-pause1" id="play-pause1-label" class="play-pause-label">►</label> 
                             
-                            <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls>	
-                                <p>Fallback content goes here.</p>
-                                </audio>
-                                
-                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                            class="portfolio-lightbox preview-link" title="Song 1"><i class="bx bx-plus"></i></a>
-                            
-                            
-                           
-
-
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/song-pictures/WildSpirit-image.jpeg" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                            <h4>Web 3</h4>
-                            <p>Web</p>
-                            <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                           
-                                <a href="portfolio-details.html" class="details-link" title="More Details"><i
-                                    class="bx bx-link"></i></a>
+                            <h4>Wild Spirit</h4>
+                            <p>Single</p>
+                            
+                            <input type="checkbox" class="play-pause-checkbox" id="play-pause2" onchange="myfunction(this.id, '1')"/>
+                            <label for="play-pause2" id="play-pause2-label" class="play-pause-label">►</label> 
                         </div>
                     </div>
 
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="assets/img/song-pictures/LikeOldTimes-image.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Like Old Times</h4>
+                            <p>Single</p>
+                            
+                            <input type="checkbox" class="play-pause-checkbox" id="play-pause3" onchange="myfunction(this.id, '2')"/>
+                            <label for="play-pause3" id="play-pause3-label" class="play-pause-label">►</label> 
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="assets/img/song-pictures/NeverMore-image.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Nevermore</h4>
+                            <p>Single</p>
+                            
+                            <input type="checkbox" class="play-pause-checkbox" id="play-pause3" onchange="myfunction(this.id, '3')"/>
+                            <label for="play-pause3" id="play-pause3-label" class="play-pause-label">►</label> 
+                        </div>
+                    </div>
+
+                    
+                    
+                <!-- 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
                         <div class="portfolio-info">
@@ -320,6 +336,7 @@
                                     class="bx bx-link"></i></a>
                         </div>
                     </div>
+                -->
 
                 </div>
 

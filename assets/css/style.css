@@ -1576,3 +1576,32 @@ blockquote {
         margin-right: 0;
     }
 }
+
+/*--------------------------------------------------------------
+# Audio
+--------------------------------------------------------------
+
+
+
+#play-pause:checked + #play-pause-label::after {
+    content: '❙❙';
+}
+
+#play-pause-label::after {
+    content: '►';
+}
+*/
+
+label {
+    cursor: pointer;
+}
+.play-pause-checkbox {
+    display: none;
+}
+
+.play-pause-label{
+    font-size: 30px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
