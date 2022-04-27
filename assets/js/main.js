@@ -289,10 +289,11 @@ on('click', '#play-pause', function(e) {
 //var audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
 var audio = new Audio();
 let audios = new Array(
-    'assets/audios/A-Long-Start.mp3', 
-    'assets/audios/Wild-Spirit.mp3',
-    'assets/audios/Like-Old-Times.mp3',
-    'assets/audios/Nevermore.mp3',
+    'assets/audios/a-long-start.mp3', 
+    'assets/audios/wild-spirit.mp3',
+    'assets/audios/like-old-times.mp3',
+    'assets/audios/nevermore.mp3',
+    'assets/audios/ethereal.mp3',
 );
 var lastCheckBox=null;
 
@@ -309,7 +310,7 @@ function myfunction(mycheckboxid, audiopath) {
     lastcheckboxlabel = document.getElementById(lastCheckBox.id+'-label');
    
     
-    lastcheckboxlabel.innerHTML = '►';
+    lastcheckboxlabel.innerHTML = ' ►';
     lastCheckBox=null;
    
   }
@@ -321,7 +322,7 @@ function myfunction(mycheckboxid, audiopath) {
 
   } else{
     audio.pause();
-    mycheckboxlabel.innerHTML = '►';
+    mycheckboxlabel.innerHTML = ' ►';
    
   }
 }
