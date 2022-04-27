@@ -289,8 +289,10 @@ on('click', '#play-pause', function(e) {
 //var audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
 var audio = new Audio();
 let audios = new Array(
-    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', 
-    'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+    'assets/audios/A-Long-Start.mp3', 
+    'assets/audios/Wild-Spirit.mp3',
+    'assets/audios/Like-Old-Times.mp3',
+    'assets/audios/Nevermore.mp3',
 );
 var lastCheckBox=null;
 
