@@ -1606,3 +1606,17 @@ label {
     right: 40px;
     top: 40px;
 }
+
+.details-link{
+    color: #666;
+}
+
+#youtube-link:hover{
+    color:red
+}
+#spotify-link:hover{
+    color:#18d26e
+}
+
+
+
