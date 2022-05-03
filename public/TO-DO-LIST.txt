@@ -1,9 +1,0 @@
-TAREAS QUE HACER:
-
-- Hacer funcionalidad mandar correo
-- Crear nueva publicación
-- Añadir apartado de DAW en About
-- Terminar de escribir detalles de cada apartado en About
-- Crear botones siguiente publicación
-- Añadir detalles canción
-- Crear apartado videos de youtube
