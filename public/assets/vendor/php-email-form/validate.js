@@ -19,6 +19,7 @@
       
       if( ! action ) {
         displayError(thisForm, 'The form action property is not set!')
+        console.log('error in validate.js line 22');
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
@@ -38,10 +39,12 @@
               })
             } catch(error) {
               displayError(thisForm, error)
+              console.log('error in validate.js line 42');
             }
           });
         } else {
           displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
+          console.log('error in validate.js line 47');
         }
       } else {
         php_email_form_submit(thisForm, action, formData);
@@ -50,6 +53,9 @@
   });
 
   function php_email_form_submit(thisForm, action, formData) {
+    console.log('action: ' + action);
+    console.log('form: ' + thisForm);
+    console.log('form: ' + formData);
     fetch(action, {
       method: 'POST',
       body: formData,
@@ -73,6 +79,9 @@
     })
     .catch((error) => {
       displayError(thisForm, error);
+      console.log('error in validate.js line 79.asdf');
+      
+      console.log('error: ' + error);
     });
   }
 
