@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "lightblazeweb"
-  }
+    "default": "lightblazeweb",
+    "light-blaze": "light-blaze"
+  },
+  "targets": {}
 }
