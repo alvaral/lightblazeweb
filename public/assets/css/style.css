@@ -475,7 +475,7 @@ p {
 }
 
 #hero .hero-content {
-    height: 30vh;
+    height: 45vh;
     text-align: left;
     width: 100%;
     display: flex;
@@ -1616,6 +1616,18 @@ label {
 }
 #spotify-link:hover{
     color:#18d26e
+}
+#twitter-link:hover{
+    color:#00acee
+}
+#instagram-link:hover{
+    color:#3f729b
+}
+#facebook-link:hover{
+    color:#3b5998
+}
+#soundcloud-link:hover{
+    color:#ff7700
 }
 
 
